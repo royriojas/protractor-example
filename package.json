@@ -1,0 +1,37 @@
+{
+  "name": "protractor-example",
+  "version": "0.0.1",
+  "description": "A simple project to quickly start writing protractor tests",
+  "scripts": {
+    "test": "node_modules/protractor/bin/protractor ./grunt-deps/protractor.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/royriojas/protractor-example.git"
+  },
+  "keywords": [
+    "Protractor",
+    "example"
+  ],
+  "author": "Roy Riojas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/royriojas/protractor-example/issues"
+  },
+  "homepage": "https://github.com/royriojas/protractor-example",
+  "devDependencies" : {
+    "matchdep": "~0.3.0",
+    "grunt-ez-frontend": "~0.2.20",
+    "codepainter": "~0.3.27",
+    "jasmine-spec-reporter": "~0.4.0",
+    "protractor": "~0.24.2",
+    "grunt": "~0.4.2",
+    "grunt-exec": "~0.4.5",
+    "stringformat": "0.0.5",
+    "grunt-jsonlint": "~1.0.4",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-jscs-checker": "~0.2.6",
+    "grunt-jsbeautifier": "git://github.com/royriojas/grunt-jsbeautifier#e69f6ef",
+    "grunt-jsvalidate": "~0.2.2"
+  }
+}

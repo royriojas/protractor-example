@@ -1,0 +1,12 @@
+{
+  "indent_style": null,
+  "indent_size": null,
+  "insert_final_newline": null,
+  "quote_type": "single",
+  "space_after_anonymous_functions": null,
+  "space_after_control_statements": null,
+  "spaces_around_operators": null,
+  "trim_trailing_whitespace": true,
+  "spaces_in_brackets": null,
+  "end_of_line": null
+}
