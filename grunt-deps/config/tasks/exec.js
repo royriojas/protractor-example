@@ -6,7 +6,7 @@ module.exports = function ( grunt ) {
   //
   // this module include some utilities, like `lib.format`, `lib.isNullOrEmpty`, `lib.isNull`, `lib.extend`, etc
   var lib = require( 'grunt-ez-frontend/lib/lib.js' );
-  var resources = require('../resources');
+  var resources = require( '../resources' );
 
   return {
     codepainter: {
@@ -30,7 +30,7 @@ module.exports = function ( grunt ) {
     },
 
     protractor: {
-      command: function (suite) {
+      command: function ( suite ) {
         var commands = [];
         if ( !grunt.file.exists( './node_modules/protractor/' )) {
           commands.push( 'npm i protractor' );
@@ -38,11 +38,10 @@ module.exports = function ( grunt ) {
         if ( !grunt.file.exists( './node_modules/protractor/selenium/' )) {
           commands.push( './node_modules/protractor/bin/webdriver-manager update' );
         }
-        if(!suite) {
+        if ( !suite ) {
           commands.push( './node_modules/protractor/bin/protractor ./grunt-deps/protractor.conf.js' );
-        }
-        else {
-          commands.push( lib.format('./node_modules/protractor/bin/protractor ./grunt-deps/protractor.conf.js --suite {0}', suite) );
+        } else {
+          commands.push( lib.format( './node_modules/protractor/bin/protractor ./grunt-deps/protractor.conf.js --suite {0}', suite ));
         }
 
         return commands.join( '\n' );

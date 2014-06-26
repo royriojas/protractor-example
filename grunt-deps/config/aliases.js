@@ -5,7 +5,7 @@ module.exports = function ( grunt, pkg ) {
   var gruntTaskUtils = require( 'grunt-ez-frontend/lib/grunt-task-utils.js' )( grunt );
 
   var gruntTasks = {
-    'validate' : [
+    'validate': [
       'jsonlint',
       'jsbeautifier',
       'jshint',
@@ -13,6 +13,7 @@ module.exports = function ( grunt, pkg ) {
       'jsvalidate'
     ],
     'default': [
+      'validate',
       'exec:protractor'
     ]
   };
