@@ -40,37 +40,6 @@ describe( 'stackoverflow', function () {
       doVisit();
 
     } );
-
-    //    var elements = element.all(by.css('a')).then(function(res) {
-    //
-    //    });
-
-    //    var visit = function (url) {
-    //      console.log('visiting: ' + url);
-    //      browser.get( url );
-    //      return ptor.sleep(1000);
-    //    };
-    //
-    //    var links = [];
-    //    element.all(by.css('a')).then(function (res) {
-    //
-    //      links = [].slice.call(res);
-    //      console.log('#### length: ', links.length);
-    //      var url = links.pop().getAttribute('href');
-    //
-    //      var doVisit = function () {
-    //        var url = links.pop().getAttribute('href');
-    //        url.then(function (urlAttr) {
-    //          visit(urlAttr).then(doVisit);
-    //        });
-    //      };
-    //
-    //      url.then(function (urlAttr) {
-    //        visit(urlAttr).then(doVisit);
-    //      });
-    //
-    //    });
-
   } );
 
 } );
