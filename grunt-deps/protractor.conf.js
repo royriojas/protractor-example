@@ -3,6 +3,12 @@ var path = require( 'path' );
 
 // An example configuration file.
 var config = {
+
+  seleniumAddress: 'http://localhost:4444/wd/hub',
+  capabilities: {
+    'browserName': 'firefox'
+  },
+
   // The address of a running selenium server.
   //seleniumAddress: 'http://localhost:4444/wd/hub',
   //  capabilities: {
@@ -10,13 +16,12 @@ var config = {
   //    'platform': 'ANY',
   //    'version': '11'
   //  },
-  //chromeOnly: true,
   chromeDriver: '../node_modules/protractor/selenium/chromedriver',
+  //chromeOnly: true,
   // Capabilities to be passed to the webdriver instance.
-  capabilities: {
-    'browserName': 'chrome'
-    //'browserName': 'firefox'
-  },
+  //  capabilities: {
+  //    'browserName': 'chrome'
+  //  },
   suites: {
     // hack to remove the dots reporter
     hack: '../e2e/reporter-hack.js'
